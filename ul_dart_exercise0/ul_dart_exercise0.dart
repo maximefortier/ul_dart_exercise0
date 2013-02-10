@@ -85,7 +85,44 @@ main() {
   
   print('No joke... $resultat km/h');
   
+  /*
+  * 
+  *      Q 0.5
+  *
+  *    Print the first 11 numbers, starting with 0, 
+  *    of the Fibonacci sequence, but without using a loop.
+  *
+  */  
   
+  print('----------------- Q5 ---------------');
+  print('11 first of Fibonacci sequence starting at 0:');
+
+  var numberlist = [];
+  numberlist.add(0);
+  numberlist.add(1);
+  var sommes = 0;
+  sommes = numberlist.elementAt(0) + numberlist.elementAt(1);
+  numberlist.add(sommes);
+  sommes = numberlist.elementAt(1) + numberlist.elementAt(2);
+  numberlist.add(sommes);
+  sommes = numberlist.elementAt(2) + numberlist.elementAt(3);
+  numberlist.add(sommes);
+  sommes = numberlist.elementAt(3) + numberlist.elementAt(4);
+  numberlist.add(sommes);
+  sommes = numberlist.elementAt(4) + numberlist.elementAt(5);
+  numberlist.add(sommes);
+  sommes = numberlist.elementAt(5) + numberlist.elementAt(6);
+  numberlist.add(sommes);
+  sommes = numberlist.elementAt(6) + numberlist.elementAt(7);
+  numberlist.add(sommes);
+  sommes = numberlist.elementAt(7) + numberlist.elementAt(8);
+  numberlist.add(sommes);
+  sommes = numberlist.elementAt(8) + numberlist.elementAt(9);
+  numberlist.add(sommes);
+  print(numberlist);
+  
+  
+
   
   
   
