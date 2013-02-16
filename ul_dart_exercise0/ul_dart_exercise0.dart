@@ -123,9 +123,22 @@ main() {
   numberlist.add(sommes);
   print(numberlist);
   
-  
+  print('----------------- Q5 ---------------');
+  print('11 first of Fibonacci sequence starting with a loop... because without the loop it was kinda boring:');
 
-  
-  
+  numberlist.clear();
+  numberlist.add(0);
+  numberlist.add(1);
+  var desiredNumberOfItems = 11; // Remove Magic Numbers....
+  //desiredNumberOfItems = 1000;
+  var i = 1;
+  sommes = 0;
+  do{
+    sommes = numberlist.elementAt(i - 1) + numberlist.elementAt(i);
+    numberlist.add(sommes);
+    i = i + 1;
+  }
+  while (numberlist.length < desiredNumberOfItems);
+  print(numberlist);
   
 }
